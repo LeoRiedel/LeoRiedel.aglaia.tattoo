@@ -1,7 +1,28 @@
 /* Beispiel-CSS */
 body {
+    font-size: 16px;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+}
+
+/* Media Query für Bildschirme mit maximaler Breite von 768px (Tablets und kleinere Bildschirme) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        /* Änderungen für kleinere Bildschirme hier */
+    }
+
+    /* Weitere Media Query-Stilregeln hier */
+}
+
+/* Media Query für Bildschirme mit maximaler Breite von 480px (Mobile Geräte) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+        /* Änderungen für noch kleinere Bildschirme hier */
+    }
+
+    /* Weitere Media Query-Stilregeln hier */
 }
 
 h1 {
