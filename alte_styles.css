@@ -1,0 +1,216 @@
+:root {
+    --standardSchrift: Georgia;
+    --standardPadding: 5px;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #fff8dd;
+    font-family: var(--standardSchrift), serif;
+    font-size: 100%;
+    overflow-wrap: break-word;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: var(--standardPadding);
+}
+
+/* Beispiel-CSS */
+header h1 {
+    font-family: var(--standardSchrift), serif;
+    font-size: 24px;
+    display: block;
+    color: black;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    border: 0;
+    padding: var(--standardPadding);
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    color: #333;
+    font-style: italic;
+    font-family: var(--standardSchrift), serif;
+    font-size: 100%;
+    margin-bottom: 5px;
+    padding: var(--standardPadding);
+}
+
+img {
+    width: calc(100vw);
+    /* - (2*var(--standardPadding)));*/
+    padding: 0;
+}
+
+
+p {
+    font-size: 100%;
+    line-height: 1.5;
+    color: #333;
+    padding: var(--standardPadding);
+}
+
+form {
+    padding: var(--standardPadding);
+    text-align: center;
+}
+
+label {
+    font-size: 100%;
+    line-height: 1.5;
+    color: #333;
+    padding: var(--standardPadding);
+    display: block;
+}
+
+footer {
+    color: #5f5f5f;
+    font-style: italic;
+    font-family: var(--standardSchrift), serif;
+    font-size: 80%;
+}
+
+a:link {
+    color: red;
+    /* Farbe für nicht besuchte Links (z.B. Rot) */
+}
+
+/* Besuchte Links */
+a:visited {
+    color: green;
+    /* Farbe für besuchte Links (z.B. Grün) */
+}
+
+/* Hover-Effekt (Mauszeiger darüber) */
+a:hover {
+    color: orange;
+    /* Farbe für den Hover-Effekt (z.B. Orange) */
+}
+
+/* Aktiver Link (nach Klick) */
+a:active {
+    color: purple;
+    /* Farbe für aktive Links (z.B. Lila) */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Stil für das Menü und das Hamburger-Symbol */
+.menu-container {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu-box {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0);
+    /*set to visible value to test*/
+    cursor: pointer;
+    z-index: 3;
+}
+
+.menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 48px;
+    height: 5px;
+    background-color: #333;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.menu-item {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menu-item li a {
+    border: 1px solid #b1ad9a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ddd7bf;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    /* Positioniert das Overlay auf dem Bildschirm */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Breite des Bildschirms */
+    height: 100%;
+    /* Höhe des Bildschirms */
+    background-color: #fff8dda0;
+    /* Graue halbdurchsichtige Hintergrundfarbe */
+    z-index: 1;
+    /* Legt die Stapelreihenfolge über anderen Elementen fest */
+}
+
+.response-message {
+    font-size: 100%;
+    line-height: 1.5;
+    color: #333;
+    padding: var(--standardPadding);
+}
+
+/* Media Query für kleine Bildschirme (z.B. Smartphones) */
+@media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(195, 195, 195);
+    }
+  }
+  
+  /* Media Query für Tablets (z.B. iPads) */
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    body {
+        background-color: rgb(185, 185, 185);
+    }
+  }
+  
+  /* Media Query für kleine Desktops */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: rgb(165, 165, 165);
+    }
+  }
+  
+  /* Media Query für große Desktops */
+  @media screen and (min-width: 1025px) {
+    body {
+        background-color: rgb(145, 145, 145);
+    }
+  }

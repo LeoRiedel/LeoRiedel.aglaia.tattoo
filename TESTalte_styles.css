@@ -1,0 +1,21 @@
+body{
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.testbox{
+    position: fixed;
+    cursor:pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*display:inline-block;*/
+    background-color:blue;
+    /*padding: 15px;
+    /*border: 1px;
+    width: 100%;
+    justify-content: center;*/
+}
